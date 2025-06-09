@@ -1,0 +1,10 @@
+FROM node:16-alpine
+WORKDIR /app
+COPY . .
+RUN npm install
+EXPOSE 3000
+CMD ["node", "index.js"]
+
+# Run this by issuing the below commands in the same directory as the app
+#docker build -t my-app:latest .
+#docker run -p 3000:3000 my-app:latest
