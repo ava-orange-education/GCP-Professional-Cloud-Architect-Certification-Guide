@@ -1,0 +1,25 @@
+{
+    "permissions": [
+      {
+        "accessLevel": "roles/storage.objectAdmin",
+        "authorizedEntities": [
+          "user:you@mnemon.ai",
+          "serviceAccount:myAppName@appspot.gserviceaccount.com",
+          "group:administrators@mnemon.ai",
+          "domain:google.com"
+        ]
+      },
+      {
+        "accessLevel": "roles/storage.objectViewer",
+        "authorizedEntities": [
+          "user:you@mnemon.ai"
+        ],
+        "restrictions": {
+          "label": "Temporary Access",
+          "details": "Valid until February 2026",
+          "rule": "request.time < timestamp('2026-02-01T00:00:00.000Z')"
+        }
+      }
+    ]
+  }
+  

@@ -1,0 +1,4 @@
+- targetId: dev
+- targetId: staging
+- targetId: prod
+  requireApproval: true
